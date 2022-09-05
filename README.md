@@ -26,3 +26,12 @@ return AutoSizeText(
 ```
 ![Screenshoot flutter_plugin_dev](images/04.png)
 Hasil dari penambahan code tersebut akan terjadi error. Hal tersebut dikarenakan variabel text belum didefinisikan pada class RedTextWidget.
+
+## Langkah 5: Buat Variabel text dan parameter di constructor
+Untuk menghilangkan error pada langkah 4 maka perlu menambahkan variabel text dan menambahkan parameter pada constructor sebagai berikut:
+```
+final String text;
+
+const RedTextWidget({Key? key, required this.text}) : super(key: key);
+```
+![Screenshoot flutter_plugin_dev](images/05.png)
