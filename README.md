@@ -77,7 +77,7 @@ Container(
 5. Jelaskan maksud dari tiap parameter yang ada di dalam plugin auto_size_text berdasarkan tautan pada dokumentasi ini !
 
 	| Parameter  | Description |
-	| ------------- | ------------- |
+	| --- | --- |
 	| Key*  | Mengontrol bagaimana satu widget menggantikan widget lain di pohon.  |
 	| textKey  | Mengatur key untuk widget Teks yang dihasilkan  |
 	| style* | Jika bukan null, style digunakan untuk teks ini |
