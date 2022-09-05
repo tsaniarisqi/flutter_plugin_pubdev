@@ -13,3 +13,16 @@ Menambahkan plugin auto_size_text, menggunakan perintah "flutter pub add auto_si
 ## Langkah 3: Buat file red_text_widget.dart
 Membuat file baru pada folder lib dengan nama red_text_widget.dart.
 ![Screenshoot flutter_plugin_dev](images/03.png)
+
+## Langkah 4: Tambah Widget AutoSizeText
+Untuk menggunakan plugin auto_size_text, maka perlu untuk merubah kode return Container() menjadi seperti berikut.
+```
+return AutoSizeText(
+      text,
+      style: const TextStyle(color: Colors.red, fontSize: 14),
+      maxLines: 2,
+      overflow: TextOverflow.ellipsis,
+);
+```
+![Screenshoot flutter_plugin_dev](images/04.png)
+Hasil dari penambahan code tersebut akan terjadi error. Hal tersebut dikarenakan variabel text belum didefinisikan pada class RedTextWidget.
