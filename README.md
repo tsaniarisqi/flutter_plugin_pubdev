@@ -35,3 +35,25 @@ final String text;
 const RedTextWidget({Key? key, required this.text}) : super(key: key);
 ```
 ![Screenshoot flutter_plugin_dev](images/05.png)
+
+## Langkah 6: Tambahkan widget di main.dart
+Menambahkan dua widget berikut pada file main.dart
+```
+Container(
+   color: Colors.yellowAccent,
+   width: 50,
+   child: const RedTextWidget(
+	text: 'You have pushed the button this many times:',
+	),
+),
+Container(
+    color: Colors.greenAccent,
+    width: 100,
+    child: const Text(
+	'You have pushed the button this many times:',
+	),
+),
+```
+- Widget pertama menggunakan RedTextWidget, hasilnya yaitu tulisan yang meimliki background berwarna kuning
+- Untuk widget kedua hanya menggunakan text saja, hasilnya yaitu tulisan yang memiliki background berwarna hijau
+![Screenshoot flutter_plugin_dev](images/06.png)
